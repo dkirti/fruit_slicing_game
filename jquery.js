@@ -32,13 +32,13 @@ $(function(){
 function addHeart(){
     $("#lifeline").empty();
     for(i=0;i<lifeleft;i++){
-        $("#lifeline").append('<img src="heart.png" class="life">')
+        $("#lifeline").append('<img src="image/heart.png" class="life">')
     }
 }
 
 
 function collect(){
-    $("#fruit1").attr('src',+fruits[Math.round(9*Math.random())]+'.png')
+    $("#fruit1").attr('src','image/'+fruits[Math.round(9*Math.random())]+'.png')
 }
 // add fruits to the display
 function showaction(){
